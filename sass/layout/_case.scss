@@ -1,0 +1,31 @@
+.case {
+    display: flex;
+    gap: 30px;
+}
+
+.case-images {
+    display: flex;
+
+    flex-direction: column;
+    position: relative;
+}
+
+.case-text {
+    background-color: rgba(47, 48, 58, 0.8);
+    position: absolute;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    width: 100%;
+
+    bottom: 0;
+    left: 0;
+    margin: 0;
+
+    text-align: center;
+    @include font(14px, 700, 1.14, 0.03em);
+
+
+    text-transform: uppercase;
+
+    color: var(--hero-text-color);
+}

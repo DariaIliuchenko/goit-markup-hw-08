@@ -1,0 +1,146 @@
+.footer {
+    background-color: var(--background-secondary-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-conteiner {
+    display: flex;
+
+    align-items: baseline;
+}
+
+.footer .logo {
+    margin-bottom: 20px;
+}
+
+.address {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.address .text {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--hero-text-color);
+    @include font(14px, null, 1.71, null);
+    
+    
+}
+
+.address .mail,
+.address .tel {
+    color: rgba(255, 255, 255, 0.6);
+
+    
+    @include font(14px, null, 1.71, null);
+    text-decoration: none;
+}
+
+.adress-tel-mail {
+    margin-top: 9px;
+}
+
+.address-tel-mail-item+.address-tel-mail-item {
+    margin-top: 9px;
+}
+
+.welcome {
+    margin-left: 70px;
+}
+
+.welcome-text {
+    margin: 0;
+    text-transform: uppercase;
+    @include font(14px, 700, 1.14, null);
+   
+    color: var(--hero-text-color);
+}
+
+.welcome-list {
+    display: flex;
+
+    margin-top: 20px;
+}
+
+.welcome-item+.welcome-item {
+    margin-left: 10px;
+}
+
+.welcome-soc-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color var(--transition);
+    &:hover,
+    &:focus {
+         background-color: var(--accent-text-color);
+        }
+}
+
+.welcome-link-icon {
+    fill: var(--hero-text-color);
+}
+
+
+.subscribe-field {
+    margin-left: 93px;
+}
+
+.email-label {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--hero-text-color);
+}
+
+.subscribe-input {
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.15);
+    @include font(16px, null, 1.25, null);
+    
+
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-icon {
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-input-icon {
+    fill: var(--hero-text-color);
+    right: 28px;
+}
+
+.subscribe-field-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

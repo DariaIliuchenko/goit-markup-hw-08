@@ -1,0 +1,15 @@
+.logo {
+    color: var(--accent-text-color);
+    font-family: Raleway, sans-serif;
+    @include font(26px, 700, 1.19, 0.03em);
+    
+    text-decoration: none;
+    &--up {
+            color: var(--main-text-color);
+        }
+    
+    &--down {
+            color: var(--hero-text-color);
+        }
+}
+

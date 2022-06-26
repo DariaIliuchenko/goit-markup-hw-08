@@ -1,0 +1,29 @@
+
+.navigation {
+    margin-left: 93px;
+    &__list {
+            display: flex;
+        }    
+    &__item:not(:last-child) {
+        margin-right: 50px;
+    }
+    &__link {
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+            
+
+        @include font(14px, 500, 1.14, 0.02em);
+        text-decoration: none;
+        transition: color var(--transition);
+            
+        &:hover,
+        &:focus {
+            color: var(--accent-text-color);}
+    }
+
+}      
+        
+
+
+

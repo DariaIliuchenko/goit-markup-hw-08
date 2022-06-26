@@ -1,0 +1,22 @@
+.hero-button {
+    display: block;
+    margin: 0 auto;
+    border: transparent;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+    background-color: var(--accent-text-color);
+    color: var(--hero-text-color);
+    cursor: pointer;
+    font-family: inherit;
+
+    @include font(16px, 700, 1.86, 0.06em);
+    
+    text-align: center;
+    transition: background-color var(--transition);
+    &:hover,
+    &:focus {
+            background-color: var(--background-hover-btn);
+        }
+}
+
