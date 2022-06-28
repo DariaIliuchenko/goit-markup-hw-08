@@ -46,7 +46,7 @@ address {
 body {
   background-color: var(--background-primary-color);
   color: var(--main-text-color);
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
 }
 
@@ -101,7 +101,7 @@ body {
 
 .logo {
   color: var(--accent-text-color);
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 1.19;
@@ -784,7 +784,7 @@ body {
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: var(--background-secondary-color);
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
