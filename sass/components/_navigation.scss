@@ -2,7 +2,8 @@
 .navigation {
     display: none;
     @include tablet{
-        margin-left: 93px;
+        display:block;
+        margin-left: 88px;
         
         &__list {
             display: flex;

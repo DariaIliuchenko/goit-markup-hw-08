@@ -78,4 +78,6 @@
     }
     
 }
-
+@include tablet{
+.team__cards-item {
+    width: calc((100% - 30px) / 2);}}

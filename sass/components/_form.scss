@@ -81,7 +81,9 @@
 }
 
 .modal-policy-text {
-    @include font(14px, 400, 1.71, 0.03em);
+    
+        
+    @include font(12px, 400, 1.17, 0.03em);
     color:var(--secondary-text-color);
 }
 

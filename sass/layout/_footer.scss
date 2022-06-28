@@ -6,18 +6,26 @@
 
 .footer-conteiner {
     @include tablet{
-        display: flex;
+        
         align-items: center;
         text-align: center;  
     }
   
 }
+.footer-tab {
 
+    @include tablet{
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+    }
+}
 .footer .logo {
     margin-bottom: 20px;
 }
 .footer-address{
     text-align: center;
+
 }
 .address {
     margin-top: 20px;
@@ -56,6 +64,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @include tablet {
+            margin-left: 165px;
+            margin-top: 0;
+        }
 }
 
 .welcome-text {
@@ -119,6 +131,7 @@
 }
 
 .subscribe-input {
+    
     max-width: 450px;
     width: 100%;
     height: 50px;
@@ -155,8 +168,11 @@
 
 .subscribe-field-input {
     width: 100%;    
+    @include tablet{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
 }

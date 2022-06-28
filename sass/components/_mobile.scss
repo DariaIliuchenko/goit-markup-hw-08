@@ -6,7 +6,7 @@
     color: var(--accent-text-color);
     font-weight: 500;
     font-size: 18px;
-    line-height: 1.22px;
+    line-height: 1.22;
    
     
     letter-spacing: 0.02em;
@@ -120,4 +120,9 @@
 .mob-menu-bottom{
     display: flex;
     flex-direction: column;
+}
+@include tablet{
+.menu-open{
+    display: none;
+}
 }
