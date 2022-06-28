@@ -57,6 +57,62 @@
             </a>
           </li>
         </ul>
+        <button type="button" class="menu-open">
+          <svg class="menu-open__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu_40px-1"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden">
+        <div class="cont">
+          <div class="mob-menu-top">
+            <button type="button" class="menu-close">
+              <svg width="40" height="40">
+                <use
+                  class="menu-close__icon"
+                  href="./images/icons.svg#icon-close_40px-1"
+                ></use>
+              </svg>
+            </button>
+            <div class="navigation-mobile">
+              <ul class="navigation-mobile__list list">
+                <li class="navigation-mobile__item">
+                  <a href="./index.html" class="navigation-mobile__link">
+                    Студия
+                  </a>
+                </li>
+                <li class="navigation-mobile__item">
+                  <a
+                    href="./portfolio.html"
+                    class="navigation-mobile__link current-mobile"
+                  >
+                    Портфолио</a
+                  >
+                </li>
+                <li class="navigation-mobile__item">
+                  <a href="" class="navigation-mobile__link"> Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="mob-menu-bottom">
+            <a class="contacts-mobile__link" href="tel:+380961111111">
+              +38 096 111 11 11
+            </a>
+            <a class="contacts-mobile__mail" href="mailto:info@devstudio.com">
+              info@devstudio.com
+            </a>
+
+            <ul class="mob-soc-link list">
+              <li class="mob-soc-item">
+                <p class="mob-soc-icon">Instagram</p>
+              </li>
+              <li class="mob-soc-item"><p class="mob-soc-icon">Twitter</p></li>
+              <li class="mob-soc-item"><p class="mob-soc-icon">Facebook</p></li>
+              <li class="mob-soc-item"><p class="mob-soc-icon">LinkedIn</p></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -86,12 +142,22 @@
             <li class="portfolio-item">
               <a href="" class="portfolio-link">
                 <div class="team-portfolio-top">
-                  <img
-                    src="./images/port1.jpg"
-                    alt="ноутбук"
-                    width="370"
-                    height="294"
-                  />
+                  <picture
+                    ><source
+                      srcset="
+                        ./images/p1desc1x.jpg 1x,
+                        ./images/p1desc2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)" />
+                    <source
+                      srcset="./images/p1tab1x.jpg 1x, ./images/p1tab2x.jpg 2x"
+                      media="(min-width: 768px)" />
+                    <source
+                      srcset="./images/p1mob1x.jpg 1x, ./images/p1mob2x.jpg 2x"
+                      media="(min-width: 320px)" />
+                    <img src="./images/p1mob1x.jpg" alt="ноутбук"
+                  /></picture>
+
                   <p class="portfolio-top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -107,12 +173,22 @@
             <li class="portfolio-item">
               <a href="" class="portfolio-link">
                 <div class="team-portfolio-top">
-                  <img
-                    src="./images/port2.jpg"
-                    alt="ноутбук"
-                    width="370"
-                    height="294"
-                  />
+                  <picture
+                    ><source
+                      srcset="
+                        ./images/p2desc1x.jpg 1x,
+                        ./images/p2desc2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)" />
+                    <source
+                      srcset="./images/p2tab1x.jpg 1x, ./images/p2tab2x.jpg 2x"
+                      media="(min-width: 768px)" />
+                    <source
+                      srcset="./images/p2mob1x.jpg 1x, ./images/p2mob2x.jpg 2x"
+                      media="(min-width: 320px)" />
+                    <img src="./images/p2mob1x.jpg" alt="ноутбук"
+                  /></picture>
+
                   <p class="portfolio-top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -128,12 +204,21 @@
             <li class="portfolio-item">
               <a href="" class="portfolio-link">
                 <div class="team-portfolio-top">
-                  <img
-                    src="./images/port3.jpg"
-                    alt="ноутбук"
-                    width="370"
-                    height="294"
-                  />
+                  <picture
+                    ><source
+                      srcset="
+                        ./images/p3desc1x.jpg 1x,
+                        ./images/p3desc2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)" />
+                    <source
+                      srcset="./images/p3tab1x.jpg 1x, ./images/p3tab2x.jpg 2x"
+                      media="(min-width: 768px)" />
+                    <source
+                      srcset="./images/p3mob1x.jpg 1x, ./images/p3mob2x.jpg 2x"
+                      media="(min-width: 320px)" />
+                    <img src="./images/p3mob1x.jpg" alt="ноутбук"
+                  /></picture>
                   <p class="portfolio-top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -149,12 +234,21 @@
             <li class="portfolio-item">
               <a href="" class="portfolio-link">
                 <div class="team-portfolio-top">
-                  <img
-                    src="./images/port4.jpg"
-                    alt="ноутбук"
-                    width="370"
-                    height="294"
-                  />
+                  <picture
+                    ><source
+                      srcset="
+                        ./images/p4desc1x.jpg 1x,
+                        ./images/p4desc2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)" />
+                    <source
+                      srcset="./images/p4tab1x.jpg 1x, ./images/p4tab2x.jpg 2x"
+                      media="(min-width: 768px)" />
+                    <source
+                      srcset="./images/p4mob1x.jpg 1x, ./images/p4mob2x.jpg 2x"
+                      media="(min-width: 320px)" />
+                    <img src="./images/p4mob1x.jpg" alt="ноутбук"
+                  /></picture>
                   <p class="portfolio-top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -170,12 +264,21 @@
             <li class="portfolio-item">
               <a href="" class="portfolio-link">
                 <div class="team-portfolio-top">
-                  <img
-                    src="./images/port5.jpg"
-                    alt="ноутбук"
-                    width="370"
-                    height="294"
-                  />
+                  <picture
+                    ><source
+                      srcset="
+                        ./images/p5desc1x.jpg 1x,
+                        ./images/p5desc2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)" />
+                    <source
+                      srcset="./images/p5tab1x.jpg 1x, ./images/p5tab2x.jpg 2x"
+                      media="(min-width: 768px)" />
+                    <source
+                      srcset="./images/p5mob1x.jpg 1x, ./images/p5mob2x.jpg 2x"
+                      media="(min-width: 320px)" />
+                    <img src="./images/p5mob1x.jpg" alt="ноутбук"
+                  /></picture>
                   <p class="portfolio-top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -192,12 +295,21 @@
             <li class="portfolio-item">
               <a href="" class="portfolio-link">
                 <div class="team-portfolio-top">
-                  <img
-                    src="./images/port6.jpg"
-                    alt="ноутбук"
-                    width="370"
-                    height="294"
-                  />
+                  <picture
+                    ><source
+                      srcset="
+                        ./images/p6desc1x.jpg 1x,
+                        ./images/p6desc2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)" />
+                    <source
+                      srcset="./images/p6tab1x.jpg 1x, ./images/p6tab2x.jpg 2x"
+                      media="(min-width: 768px)" />
+                    <source
+                      srcset="./images/p6mob1x.jpg 1x, ./images/p6mob2x.jpg 2x"
+                      media="(min-width: 320px)" />
+                    <img src="./images/p6mob1x.jpg" alt="ноутбук"
+                  /></picture>
                   <p class="portfolio-top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -213,12 +325,21 @@
             <li class="portfolio-item">
               <a href="" class="portfolio-link">
                 <div class="team-portfolio-top">
-                  <img
-                    src="./images/port7.jpg"
-                    alt="ноутбук"
-                    width="370"
-                    height="294"
-                  />
+                  <picture
+                    ><source
+                      srcset="
+                        ./images/p7desc1x.jpg 1x,
+                        ./images/p7desc2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)" />
+                    <source
+                      srcset="./images/p7tab1x.jpg 1x, ./images/p7tab2x.jpg 2x"
+                      media="(min-width: 768px)" />
+                    <source
+                      srcset="./images/p7mob1x.jpg 1x, ./images/p7mob2x.jpg 2x"
+                      media="(min-width: 320px)" />
+                    <img src="./images/p7mob1x.jpg" alt="ноутбук"
+                  /></picture>
                   <p class="portfolio-top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -234,12 +355,21 @@
             <li class="portfolio-item">
               <a href="" class="portfolio-link">
                 <div class="team-portfolio-top">
-                  <img
-                    src="./images/port8.jpg"
-                    alt="ноутбук"
-                    width="370"
-                    height="294"
-                  />
+                  <picture
+                    ><source
+                      srcset="
+                        ./images/p8desc1x.jpg 1x,
+                        ./images/p8desc2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)" />
+                    <source
+                      srcset="./images/p8tab1x.jpg 1x, ./images/p8tab2x.jpg 2x"
+                      media="(min-width: 768px)" />
+                    <source
+                      srcset="./images/p8mob1x.jpg 1x, ./images/p8mob2x.jpg 2x"
+                      media="(min-width: 320px)" />
+                    <img src="./images/p8mob1x.jpg" alt="ноутбук"
+                  /></picture>
                   <p class="portfolio-top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -255,12 +385,21 @@
             <li class="portfolio-item">
               <a href="" class="portfolio-link">
                 <div class="team-portfolio-top">
-                  <img
-                    src="./images/port9.jpg"
-                    alt="ноутбук"
-                    width="370"
-                    height="294"
-                  />
+                  <picture
+                    ><source
+                      srcset="
+                        ./images/p9desc1x.jpg 1x,
+                        ./images/p9desc2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)" />
+                    <source
+                      srcset="./images/p9tab1x.jpg 1x, ./images/p9tab2x.jpg 2x"
+                      media="(min-width: 768px)" />
+                    <source
+                      srcset="./images/p9mob1x.jpg 1x, ./images/p9mob2x.jpg 2x"
+                      media="(min-width: 320px)" />
+                    <img src="./images/p9mob1x.jpg" alt="ноутбук"
+                  /></picture>
                   <p class="portfolio-top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -354,5 +493,7 @@
         </form>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

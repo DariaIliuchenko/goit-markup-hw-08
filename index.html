@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=1, initial-scale=1.0" />
     <title>Document</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -179,35 +179,60 @@
           </ul>
         </div>
       </section>
-      <section class="section">
+      <section class="section-case">
         <div class="conteiner">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="case list">
             <li class="case-images">
-              <img
-                src="./images/box1.jpg"
-                alt="набор текста на клавиатуре"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/first1px.jpg 1x, ./images/first2px.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <img
+                  src="./images/first1px.jpg"
+                  alt="набор текста на клавиатуре"
+                />
+              </picture>
+
               <p class="case-text">Десктопные приложения</p>
             </li>
             <li class="case-images">
-              <img
-                src="./images/box2.jpg"
-                alt="телефон в руках и ноутбук"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/sec1px.jpg 1x, ./images/sec2px.jpg 2x"
+                  media="(min-width: 1200px)"
+                  width="370"
+                  height="294"
+                />
+
+                <img
+                  src="./images/sec1px.jpg"
+                  alt="телефон в руках и ноутбук"
+                  width="370"
+                  height="294"
+                />
+              </picture>
+
               <p class="case-text">Мобильные приложения</p>
             </li>
             <li class="case-images">
-              <img
-                src="./images/box3.jpg"
-                alt="подбор цвета на планшете"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/3d1px.jpg 1x, ./images/sec2px.jpg 2x"
+                  media="(min-width: 1200px)"
+                  width="370"
+                  height="294"
+                />
+
+                <img
+                  src="./images/3d1px.jpg"
+                  alt="телефон в руках и ноутбук"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <p class="case-text">Дизайнерские решения</p>
             </li>
           </ul>
@@ -218,12 +243,34 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team__cards list">
             <li class="team__cards-item">
-              <img
-                src="./images/img1.jpg"
-                alt="фото Игорь Демьяненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-first-desc1px.jpg 1x,
+                    ./images/team-first-desc2px.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-first-tab1px.jpg 1x,
+                    ./images/team-first-tab2px.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-first-mob1px.jpg 1x,
+                    ./images/team-first-mob2px.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/team-first-mob1px.jpg"
+                  alt="фото Игорь Демьяненко"
+                />
+              </picture>
+
               <div class="team__list">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p class="team__position">
@@ -262,12 +309,34 @@
               </div>
             </li>
             <li class="team__cards-item">
-              <img
-                src="./images/img2.jpg"
-                alt="фото Ольга Репина"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-sec-desc1px.jpg 1x,
+                    ./images/team-sec-desc2px.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-sec-tab1px.jpg 1x,
+                    ./images/team-sec-tab2px.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-sec-mob1px.jpg 1x,
+                    ./images/team-sec-mob2px.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/team-sec-mob1px.jpg"
+                  alt="фото Ольга Репина"
+                />
+              </picture>
+
               <div class="team__list">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p class="team__position">
@@ -306,12 +375,33 @@
               </div>
             </li>
             <li class="team__cards-item">
-              <img
-                src="./images/img3.jpg"
-                alt="фото Николай Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-3-desc1px.jpg 1x,
+                    ./images/team-3-desc2px.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-3-tab1px.jpg 1x,
+                    ./images/team-3-tab2px.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-3-mob1px.jpg 1x,
+                    ./images/team-3-mob2px.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/team-3-mob1px.jpg"
+                  alt="фото Николай Тарасов"
+                />
+              </picture>
               <div class="team__list">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p class="team__position"><span lang="en"> Marketing </span></p>
@@ -348,12 +438,34 @@
               </div>
             </li>
             <li class="team__cards-item">
-              <img
-                src="./images/img4.jpg"
-                alt="фото Михаил Ермаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-4-desc1px.jpg 1x,
+                    ./images/team-4-desc2px.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-4-tab1px.jpg 1x,
+                    ./images/team-4-tab2px.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-4-mob1px.jpg 1x,
+                    ./images/team-4-mob2px.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/team-4-mob1px.jpg"
+                  alt="фото Михаил Ермаков"
+                />
+              </picture>
+
               <div class="team__list">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p class="team__position">

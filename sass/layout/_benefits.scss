@@ -1,16 +1,25 @@
 .section-benefits {
-    padding-top: 94px;
-    padding-bottom: 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .benefits {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
+
 .benefits-item {
-    width: 270px;
+
+    @include tablet {
+        width: calc((100% - 30px) / 2);
+    }
+    @include desktop{
+        width: calc((100% - 90px) / 4);
+    }
 }
+
 
 .benefits-icon {
     display: flex;
@@ -18,7 +27,7 @@
     justify-content: center;
     background-color: #f5f4fa;
     border-radius: 4px;
-    width: 270px;
+    
     height: 120px;
     margin-bottom: 30px;
 }
@@ -29,6 +38,7 @@
     color: var(--main-text-color);
     @include font(14px, 700, 1.14, 0.03em);    
     text-transform: uppercase;
+    text-align: center;
 }
 .benefits p {
     margin-top: 0;

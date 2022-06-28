@@ -1,6 +1,18 @@
+.section-case {
+    display: none;
+
+    @include desktop {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
+}
+
+
 .case {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 .case-images {

@@ -6,9 +6,9 @@
 }
 
 .portfolio-item {
-    width: calc((100% - 60px) / 3);
-    position: relative;
-}
+            width: 100%;
+            position: relative;
+        }
 
 .item-card {
     padding: 24px;
@@ -30,12 +30,15 @@
 
 .buttons-list {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    column-gap: 8px;
+    row-gap: 15px;
+    margin-top: 60px;
+    margin-bottom: 40px;
 }
 
-.buttons-item+.buttons-item {
-    margin-left: 8px;
-}
+
 
 .portfolio-button {
     display: inline-block;
@@ -112,4 +115,11 @@
         transform: translateY(0);
         transition: transform var(--transition);
     }
+}
+
+@include desktop{
+    .portfolio-item {
+            width: calc((100% - 60px) / 3);
+            position: relative;
+        }
 }
