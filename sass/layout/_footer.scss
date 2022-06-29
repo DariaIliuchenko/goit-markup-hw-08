@@ -12,6 +12,7 @@
     }
   
 }
+
 .footer-tab {
 
     @include tablet{
@@ -168,11 +169,175 @@
 
 .subscribe-field-input {
     width: 100%;    
-    @include tablet{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
+}
+@include desktop{
+    .footer {
+            
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+        
+    
+        .footer-conteiner {
+            display: flex;    
+            align-items: baseline;
+            
+        }
+        .footer-address{
+            text-align: start;
+        }
+    
+        .footer .logo {
+            margin-bottom: 20px;
+        }
+    
+        .address {
+            margin-top: 20px;
+            margin-bottom: 0;
+        }
+    
+        .address .text {
+            margin-top: 0;
+            margin-bottom: 0;
+            color: var(--hero-text-color);
+    
+            font-size: 14px;
+            line-height: 1.71;
+            font-style: normal;
+        }
+    
+        .address .mail,
+        .address .tel {
+            color: rgba(255, 255, 255, 0.6);
+    
+            font-size: 14px;
+            line-height: 1.71;
+            font-style: normal;
+            text-decoration: none;
+        }
+    
+        .adress-tel-mail {
+            margin-top: 9px;
+        }
+    
+        .address-tel-mail-item+.address-tel-mail-item {
+            margin-top: 9px;
+        }
+    
+        .welcome {
+            margin-left: 70px;
+            display:block;
+            text-align: start;
+        }
+    
+        .welcome-text {
+            margin: 0;
+            text-transform: uppercase;
+    
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+            color: var(--hero-text-color);
+        }
+    
+        .welcome-list {
+            display: flex;
+    
+            margin-top: 20px;
+        }
+    
+        .welcome-item+.welcome-item {
+            margin-left: 10px;
+        }
+    
+        .welcome-soc-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            width: 44px;
+            height: 44px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    
+        .welcome-link-icon {
+            fill: var(--hero-text-color);
+        }
+    
+        .welcome-soc-link:hover,
+        .welcome-soc-link:focus {
+            background-color: var(--accent-text-color);
+        }
+    
+        
+        .subscribe-field {
+            margin-left: 93px;
+            margin-top: 0;
+            align-items: flex-start;
+        }
+    
+        .email-label {
+            display: block;
+            margin-bottom: 20px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+    
+            color: var(--hero-text-color);
+        }
+    
+        .subscribe-input {
+            margin-bottom: 0;
+            width: 358px;
+            height: 50px;
+            margin-right: 12px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+            background-color: rgba(0, 0, 0, 0.15);
+    
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.25;
+    
+            color: rgba(255, 255, 255, 0.6);
+        }
+    
+        .footer-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .submit-icon {
+            margin-left: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .button-input-icon {
+            fill: var(--hero-text-color);
+            right: 28px;
+        }
+    
+        .subscribe-field-input {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
 }

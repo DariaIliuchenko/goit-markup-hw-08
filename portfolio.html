@@ -19,50 +19,48 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="conteiner header__container">
-        <a href="./index.html" class="logo">
-          Web<span class="logo--up">Studio</span>
-        </a>
-        <nav class="navigation">
-          <ul class="navigation__list list">
-            <li class="navigation__item">
-              <a href="./index.html" class="navigation__link"> Студия </a>
-            </li>
-            <li class="navigation__item">
-              <a href="./portfolio.html" class="navigation__link current">
-                Портфолио</a
-              >
-            </li>
-            <li class="navigation__item">
-              <a href="" class="navigation__link"> Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="contacts list">
-          <li class="contacts__item">
-            <a class="contacts__link" href="mailto:info@devstudio.com">
-              <svg class="contacts__icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope-hover"></use>
-              </svg>
-              info@devstudio.com
-            </a>
+    <header class="header conteiner">
+      <a href="./index.html" class="logo">
+        Web<span class="logo--up">Studio</span>
+      </a>
+      <nav class="navigation">
+        <ul class="navigation__list list">
+          <li class="navigation__item">
+            <a href="./index.html" class="navigation__link"> Студия </a>
           </li>
-          <li class="contacts__item">
-            <a class="contacts__link" href="tel:+380961111111">
-              <svg class="contacts__icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
+          <li class="navigation__item">
+            <a href="./portfolio.html" class="navigation__link current">
+              Портфолио</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="" class="navigation__link"> Контакты</a>
           </li>
         </ul>
-        <button type="button" class="menu-open">
-          <svg class="menu-open__icon" width="40" height="40">
-            <use href="./images/icons.svg#icon-menu_40px-1"></use>
-          </svg>
-        </button>
-      </div>
+      </nav>
+      <ul class="contacts list">
+        <li class="contacts__item">
+          <a class="contacts__link" href="mailto:info@devstudio.com">
+            <svg class="contacts__icon" width="16" height="12">
+              <use href="./images/icons.svg#icon-envelope-hover"></use>
+            </svg>
+            info@devstudio.com
+          </a>
+        </li>
+        <li class="contacts__item">
+          <a class="contacts__link" href="tel:+380961111111">
+            <svg class="contacts__icon" width="10" height="16">
+              <use href="./images/icons.svg#icon-smartphone"></use>
+            </svg>
+            +38 096 111 11 11
+          </a>
+        </li>
+      </ul>
+      <button type="button" class="menu-open">
+        <svg class="menu-open__icon" width="40" height="40">
+          <use href="./images/icons.svg#icon-menu_40px-1"></use>
+        </svg>
+      </button>
       <div class="mob-menu is-hidden">
         <div class="cont">
           <div class="mob-menu-top">
@@ -142,7 +140,7 @@
             <li class="portfolio-item">
               <a href="" class="portfolio-link">
                 <div class="team-portfolio-top">
-                  <picture
+                  <picture class="picture"
                     ><source
                       srcset="
                         ./images/p1desc1x.jpg 1x,
@@ -173,7 +171,7 @@
             <li class="portfolio-item">
               <a href="" class="portfolio-link">
                 <div class="team-portfolio-top">
-                  <picture
+                  <picture class="picture"
                     ><source
                       srcset="
                         ./images/p2desc1x.jpg 1x,
@@ -204,7 +202,7 @@
             <li class="portfolio-item">
               <a href="" class="portfolio-link">
                 <div class="team-portfolio-top">
-                  <picture
+                  <picture class="picture"
                     ><source
                       srcset="
                         ./images/p3desc1x.jpg 1x,
@@ -234,7 +232,7 @@
             <li class="portfolio-item">
               <a href="" class="portfolio-link">
                 <div class="team-portfolio-top">
-                  <picture
+                  <picture class="picture"
                     ><source
                       srcset="
                         ./images/p4desc1x.jpg 1x,
@@ -264,7 +262,7 @@
             <li class="portfolio-item">
               <a href="" class="portfolio-link">
                 <div class="team-portfolio-top">
-                  <picture
+                  <picture class="picture"
                     ><source
                       srcset="
                         ./images/p5desc1x.jpg 1x,
@@ -295,7 +293,7 @@
             <li class="portfolio-item">
               <a href="" class="portfolio-link">
                 <div class="team-portfolio-top">
-                  <picture
+                  <picture class="picture"
                     ><source
                       srcset="
                         ./images/p6desc1x.jpg 1x,
@@ -325,7 +323,7 @@
             <li class="portfolio-item">
               <a href="" class="portfolio-link">
                 <div class="team-portfolio-top">
-                  <picture
+                  <picture class="picture"
                     ><source
                       srcset="
                         ./images/p7desc1x.jpg 1x,
@@ -355,7 +353,7 @@
             <li class="portfolio-item">
               <a href="" class="portfolio-link">
                 <div class="team-portfolio-top">
-                  <picture
+                  <picture class="picture"
                     ><source
                       srcset="
                         ./images/p8desc1x.jpg 1x,
@@ -385,7 +383,7 @@
             <li class="portfolio-item">
               <a href="" class="portfolio-link">
                 <div class="team-portfolio-top">
-                  <picture
+                  <picture class="picture"
                     ><source
                       srcset="
                         ./images/p9desc1x.jpg 1x,
@@ -418,56 +416,60 @@
     </main>
     <footer class="footer">
       <div class="footer-conteiner conteiner">
-        <div class="footer-address">
-          <a href="./index.html" class="logo">
-            Web<span class="logo--down">Studio</span>
-          </a>
-          <address class="address">
-            <p class="text">г. Киев, пр-т Леси Украинки, 26</p>
-            <ul class="adress-tel-mail list">
-              <li class="address-tel-mail-item">
-                <a href="mailto:info@devstudio.com" class="mail">
-                  info@devstudio.com
+        <div class="footer-tab">
+          <div class="footer-address">
+            <a href="./index.html" class="logo">
+              Web<span class="logo--down">Studio</span>
+            </a>
+            <address class="address">
+              <p class="text">г. Киев, пр-т Леси Украинки, 26</p>
+              <ul class="adress-tel-mail list">
+                <li class="address-tel-mail-item">
+                  <a href="mailto:info@devstudio.com" class="mail">
+                    info@devstudio.com
+                  </a>
+                </li>
+                <li class="address-tel-mail-item">
+                  <a href="tel:+380961111111" class="tel">
+                    +38 096 111 11 11
+                  </a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="welcome">
+            <p class="welcome-text">Присоединяйтесь</p>
+            <ul class="welcome-list list">
+              <li class="welcome-item">
+                <a href="" class="welcome-soc-link">
+                  <svg class="welcome-link-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg>
                 </a>
               </li>
-              <li class="address-tel-mail-item">
-                <a href="tel:+380961111111" class="tel"> +38 096 111 11 11 </a>
+              <li class="welcome-item">
+                <a href="" class="welcome-soc-link">
+                  <svg class="welcome-link-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="welcome-item">
+                <a href="" class="welcome-soc-link">
+                  <svg class="welcome-link-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="welcome-item">
+                <a href="" class="welcome-soc-link">
+                  <svg class="welcome-link-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="welcome">
-          <p class="welcome-text">Присоединяйтесь</p>
-          <ul class="welcome-list list">
-            <li class="welcome-item">
-              <a href="" class="welcome-soc-link">
-                <svg class="welcome-link-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram-2"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="welcome-item">
-              <a href="" class="welcome-soc-link">
-                <svg class="welcome-link-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="welcome-item">
-              <a href="" class="welcome-soc-link">
-                <svg class="welcome-link-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="welcome-item">
-              <a href="" class="welcome-soc-link">
-                <svg class="welcome-link-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin-1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <form class="subscribe-field">
           <label for="email" class="email-label">Подпишитесь на рассылку</label>

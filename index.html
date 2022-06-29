@@ -19,50 +19,46 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="conteiner header__container">
-        <a href="./index.html" class="logo">
-          Web<span class="logo--up">Studio</span>
-        </a>
-        <nav class="navigation">
-          <ul class="navigation__list list">
-            <li class="navigation__item">
-              <a href="./index.html" class="navigation__link current">
-                Студия
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a href="./portfolio.html" class="navigation__link"> Портфолио</a>
-            </li>
-            <li class="navigation__item">
-              <a href="" class="navigation__link"> Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="contacts list">
-          <li class="contacts__item">
-            <a class="contacts__link" href="mailto:info@devstudio.com">
-              <svg class="contacts__icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope-hover"></use>
-              </svg>
-              info@devstudio.com
-            </a>
+    <header class="header conteiner">
+      <a href="./index.html" class="logo">
+        Web<span class="logo--up">Studio</span>
+      </a>
+      <nav class="navigation">
+        <ul class="navigation__list list">
+          <li class="navigation__item">
+            <a href="./index.html" class="navigation__link current"> Студия </a>
           </li>
-          <li class="contacts__item">
-            <a class="contacts__link" href="tel:+380961111111">
-              <svg class="contacts__icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
+          <li class="navigation__item">
+            <a href="./portfolio.html" class="navigation__link"> Портфолио</a>
+          </li>
+          <li class="navigation__item">
+            <a href="" class="navigation__link"> Контакты</a>
           </li>
         </ul>
-        <button type="button" class="menu-open">
-          <svg class="menu-open__icon" width="40" height="40">
-            <use href="./images/icons.svg#icon-menu_40px-1"></use>
-          </svg>
-        </button>
-      </div>
+      </nav>
+      <ul class="contacts list">
+        <li class="contacts__item">
+          <a class="contacts__link" href="mailto:info@devstudio.com">
+            <svg class="contacts__icon" width="16" height="12">
+              <use href="./images/icons.svg#icon-envelope-hover"></use>
+            </svg>
+            info@devstudio.com
+          </a>
+        </li>
+        <li class="contacts__item">
+          <a class="contacts__link" href="tel:+380961111111">
+            <svg class="contacts__icon" width="10" height="16">
+              <use href="./images/icons.svg#icon-smartphone"></use>
+            </svg>
+            +38 096 111 11 11
+          </a>
+        </li>
+      </ul>
+      <button type="button" class="menu-open">
+        <svg class="menu-open__icon" width="40" height="40">
+          <use href="./images/icons.svg#icon-menu_40px-1"></use>
+        </svg>
+      </button>
       <div class="mob-menu is-hidden">
         <div class="cont">
           <div class="mob-menu-top">
@@ -105,11 +101,17 @@
 
             <ul class="mob-soc-link list">
               <li class="mob-soc-item">
-                <p class="mob-soc-icon">Instagram</p>
+                <a class="mob-soc-icon" href="">Instagram</a>
               </li>
-              <li class="mob-soc-item"><p class="mob-soc-icon">Twitter</p></li>
-              <li class="mob-soc-item"><p class="mob-soc-icon">Facebook</p></li>
-              <li class="mob-soc-item"><p class="mob-soc-icon">LinkedIn</p></li>
+              <li class="mob-soc-item">
+                <a class="mob-soc-icon" href="">Twitter</a>
+              </li>
+              <li class="mob-soc-item">
+                <a class="mob-soc-icon" href="">Facebook</a>
+              </li>
+              <li class="mob-soc-item">
+                <a class="mob-soc-icon" href="">LinkedIn</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -124,10 +126,10 @@
           </button>
         </div>
       </section>
-      <section class="section-benefits">
+      <section class="section">
         <div class="conteiner">
           <h2 class="visually-hidden">Преимущества</h2>
-          <ul class="benefits list">
+          <ul class="benefits-list list">
             <li class="benefits-item">
               <div class="benefits-icon">
                 <svg class="icon" width="70" height="70">
@@ -243,7 +245,7 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team__cards list">
             <li class="team__cards-item">
-              <picture>
+              <picture class="picture">
                 <source
                   srcset="
                     ./images/team-first-desc1px.jpg 1x,
@@ -309,7 +311,7 @@
               </div>
             </li>
             <li class="team__cards-item">
-              <picture>
+              <picture class="picture">
                 <source
                   srcset="
                     ./images/team-sec-desc1px.jpg 1x,
@@ -375,7 +377,7 @@
               </div>
             </li>
             <li class="team__cards-item">
-              <picture>
+              <picture class="picture">
                 <source
                   srcset="
                     ./images/team-3-desc1px.jpg 1x,
@@ -438,7 +440,7 @@
               </div>
             </li>
             <li class="team__cards-item">
-              <picture>
+              <picture class="picture">
                 <source
                   srcset="
                     ./images/team-4-desc1px.jpg 1x,

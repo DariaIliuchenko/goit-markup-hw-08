@@ -1,16 +1,15 @@
-.section-benefits {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
 
-.benefits {
+.benefits-list {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
 }
 
 
 .benefits-item {
+    width: 100%;
 
     @include tablet {
         width: calc((100% - 30px) / 2);
@@ -32,7 +31,7 @@
     margin-bottom: 30px;
 }
 
-.benefits .title {
+.benefits-item .title {
     margin-top: 0;
     margin-bottom: 10px;
     color: var(--main-text-color);
@@ -40,7 +39,7 @@
     text-transform: uppercase;
     text-align: center;
 }
-.benefits p {
+.benefits-item p {
     margin-top: 0;
     margin-bottom: 0;
     color: var(--secondary-text-color);

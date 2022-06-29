@@ -2,6 +2,8 @@
     display: none;
 
     @include desktop {
+        display: block;
+       
         padding-top: 94px;
         padding-bottom: 94px;
     }

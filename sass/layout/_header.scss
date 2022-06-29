@@ -1,20 +1,12 @@
 .header {
-    
-   
-    
-    border-bottom: 1px solid #ececec;
-    &__container {
         
-        display: flex;
-        align-items: center;
+    border-bottom: 1px solid #ececec;
+           
+    display: flex;
+    align-items: center;
+    justify-content: center;
             
             
-    }
-    @include tablet{
-        width: 768px;
-
-    }
-    @include desktop{
-        width: 1200px;
-    }
+    
+    
 }

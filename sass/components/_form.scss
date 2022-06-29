@@ -85,6 +85,10 @@
         
     @include font(12px, 400, 1.17, 0.03em);
     color:var(--secondary-text-color);
+    @include desktop{
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 
 .modal-link {
