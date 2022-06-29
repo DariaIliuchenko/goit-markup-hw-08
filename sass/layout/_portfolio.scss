@@ -106,12 +106,12 @@
     left: 0;
     color: var(--hero-text-color);
     background-color: rgba(33, 150, 243, 0.9);
-    @include font(18px, null, 1.56, null);
+    @include font(14px, null, 1.56, null);
     height: 100%;
     transform: translateY(100%);
     transition: transform var(--transition);
     overflow: auto;
-    padding-top: 63px;
+    padding-top: 50px;
     padding-left: 24px;
     padding-right: 24px;
     padding-bottom: 63px;    
@@ -132,6 +132,10 @@
     .buttons-list {
     
         justify-content: center;
+    }
+    .portfolio-top-text {
+        @include font(18px, null, 1.56, null);
+        padding-top: 63px;
     }
 }
 @include desktop{

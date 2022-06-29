@@ -1238,13 +1238,13 @@ body {
   left: 0;
   color: var(--hero-text-color);
   background-color: rgba(33, 150, 243, 0.9);
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.56;
   height: 100%;
   transform: translateY(100%);
   transition: transform var(--transition);
   overflow: auto;
-  padding-top: 63px;
+  padding-top: 50px;
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 63px;
@@ -1265,6 +1265,12 @@ body {
 
   .buttons-list {
     justify-content: center;
+  }
+
+  .portfolio-top-text {
+    font-size: 18px;
+    line-height: 1.56;
+    padding-top: 63px;
   }
 }
 @media screen and (min-width: 1200px) {
