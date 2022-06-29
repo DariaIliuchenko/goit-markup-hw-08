@@ -482,7 +482,7 @@ body {
 .mob-soc-icon {
   color: var(--accent-text-color);
   text-decoration: none;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   line-height: 1.22;
   letter-spacing: 0.02em;
@@ -577,7 +577,7 @@ body {
 
 .contacts-mobile__link {
   font-weight: 500;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 1.18;
   text-decoration: none;
   margin-bottom: 32px;
