@@ -1,26 +1,14 @@
 
 .benefits-list {
     display: flex;
-    align-items: center;
+    
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
 }
 
-
-.benefits-item {
-    width: 100%;
-
-    @include tablet {
-        width: calc((100% - 30px) / 2);
-    }
-    @include desktop{
-        width: calc((100% - 90px) / 4);
-    }
-}
-
-
 .benefits-icon {
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,7 +23,7 @@
     margin-top: 0;
     margin-bottom: 10px;
     color: var(--main-text-color);
-    @include font(14px, 700, 1.14, 0.03em);    
+    @include font(14px, 700, 1.14, null);    
     text-transform: uppercase;
     text-align: center;
 }
@@ -43,6 +31,22 @@
     margin-top: 0;
     margin-bottom: 0;
     color: var(--secondary-text-color);
-    @include font(14px, 400, 1.71, 0.03em);
+    @include font(14px, null, 1.71, null);
     
 }
+.benefits-item .title {
+    @include tablet {
+        text-align: start;
+    }
+}
+.benefits-item {
+    text-align:start;
+    @include tablet {
+        width: calc((100% - 30px) / 2);
+    }
+
+    @include desktop {
+        width: calc((100% - 90px) / 4);
+    }
+}
+

@@ -26,10 +26,7 @@
     transform: translate(-50%, -50%) scale(1) rotate(0);
     transition: transform var(--transition);
     padding: 40px;
-    @include desktop{
-        width: 100%;
-        max-width: 528px;
-    }
+   
 }
 
 .modal-close-btn {
@@ -54,4 +51,9 @@
             fill: var(--accent-text-color);
         }
 }
+.modal{
+    @include desktop {
 
+        max-width: 528px;
+    }}
+ 

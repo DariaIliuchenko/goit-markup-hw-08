@@ -5,7 +5,7 @@
     padding-bottom: 16px;
     color: var(--accent-text-color);
     font-family: $font-logo;
-    @include font(24px, 700, 1.19, 0.03em);
+    @include font(24px, 700, 1.17, null);
     
     text-decoration: none;
     &--up {
@@ -16,8 +16,8 @@
             color: var(--hero-text-color);
     }
     @include desktop{
-        font-size: 26px;
-        line-height: 1.08;
+        @include font(26px, null, 1.19, null);
+        
     }
     
 }

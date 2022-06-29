@@ -48,10 +48,12 @@
             @include font(14px, 400, 1.14, 0.01em);          
             
             color: rgba(117, 117, 117, 0.5);
+            
         }
     &:focus {
         border: 1px solid var(--accent-text-color);
     }
+    
 }
 
 .input-wrap {
@@ -80,16 +82,7 @@
     font-size: 14px;
 }
 
-.modal-policy-text {
-    
-        
-    @include font(12px, 400, 1.17, 0.03em);
-    color:var(--secondary-text-color);
-    @include desktop{
-        font-size: 14px;
-        line-height: 1.71;
-    }
-}
+
 
 .modal-link {
     color: var(--accent-text-color);
@@ -115,5 +108,20 @@
     }
 }
 
+.modal-policy-text {
 
 
+    @include font(12px, 400, 1.17, 0.03em);
+    color: var(--secondary-text-color);
+
+    @include desktop {
+        font-size: 14px;
+        line-height: 1.71;
+    }
+}
+@include desktop {
+    .modal-comment::placeholder{
+        @include font(12px, null, 1.17, null);
+    }
+    
+}

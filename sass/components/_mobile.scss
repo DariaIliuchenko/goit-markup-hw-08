@@ -1,16 +1,13 @@
 .mob-soc-link{
     display: flex;
-    margin-top: 64px;    
+    margin-top: 64px;
+        
 }
 .mob-soc-icon{
     color: var(--accent-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.22;
     text-decoration: none;
-   
+     @include font(14px, 500, 1.22, 0.02em);
     
-    letter-spacing: 0.02em;
 }
 
 .mob-soc-item:not(:last-child){
@@ -124,7 +121,7 @@
     flex-direction: column;
 }
 @include tablet{
-.menu-open{
-    display: none;
-}
+    .menu-open{
+        display: none;
+    }
 }
