@@ -606,6 +606,9 @@ body {
 }
 .header {
   border-bottom: 1px solid #ececec;
+}
+
+.header-conteiner {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -714,6 +717,15 @@ body {
 @media screen and (min-width: 768px) {
   .benefits-item .title {
     text-align: start;
+  }
+}
+
+.benefits-section {
+  padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .benefits-section {
+    padding-top: 94px;
   }
 }
 
@@ -1107,7 +1119,6 @@ body {
     padding-left: 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
-    background-color: rgba(0, 0, 0, 0.15);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;

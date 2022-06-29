@@ -39,6 +39,17 @@
         text-align: start;
     }
 }
+
+.benefits-section{
+    padding-top: 60px;
+    
+    
+    @include desktop {
+        padding-top: 94px;
+        
+        }
+}
+
 .benefits-item {
     text-align:start;
     @include tablet {
