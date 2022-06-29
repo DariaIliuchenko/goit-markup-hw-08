@@ -1254,6 +1254,13 @@ body {
   transition: transform var(--transition);
 }
 
+@media screen and (min-width: 480px) {
+  .portfolio-top-text {
+    font-size: 18px;
+    line-height: 1.56;
+    padding-top: 63px;
+  }
+}
 @media screen and (min-width: 768px) {
   .portfolio-item {
     width: calc((100% - 30px) / 2);
@@ -1265,12 +1272,6 @@ body {
 
   .buttons-list {
     justify-content: center;
-  }
-
-  .portfolio-top-text {
-    font-size: 18px;
-    line-height: 1.56;
-    padding-top: 63px;
   }
 }
 @media screen and (min-width: 1200px) {

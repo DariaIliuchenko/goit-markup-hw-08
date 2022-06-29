@@ -121,6 +121,13 @@
         transition: transform var(--transition);
     }
 }
+
+@include mobile{
+    .portfolio-top-text {
+        @include font(18px, null, 1.56, null);
+        padding-top: 63px;
+    }
+}
 @include tablet{
     .portfolio-item {
         width: calc((100% - 30px) / 2);
@@ -133,10 +140,7 @@
     
         justify-content: center;
     }
-    .portfolio-top-text {
-        @include font(18px, null, 1.56, null);
-        padding-top: 63px;
-    }
+    
 }
 @include desktop{
     .portfolio-item {
