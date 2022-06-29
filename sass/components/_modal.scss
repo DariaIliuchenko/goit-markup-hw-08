@@ -28,7 +28,6 @@
     padding: 40px;
    
 }
-
 .modal-close-btn {
     position: absolute;
     top: 10px;
@@ -43,7 +42,6 @@
     justify-content: center;
     cursor: pointer;
 }
-
 .close-button {
     transition: fill var(--transition);
     .modal-close-btn:hover &,
@@ -53,7 +51,6 @@
 }
 .modal{
     @include desktop {
-
         max-width: 528px;
     }}
  
